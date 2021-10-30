@@ -1,16 +1,20 @@
 {
-  "name": "project110-1",
+  "name": "crown-xx",
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon ./bin/www"
+    "start": "node ./bin/www",
+    "dev": "nodemon ./bin/www"
   },
   "dependencies": {
+    "@heroku/buildpack-registry": "^1.0.1",
     "cookie-parser": "~1.4.5",
     "debug": "~4.3.2",
     "ejs": "~3.1.6",
     "express": "~4.17.1",
+    "heroku": "^7.59.0",
     "http-errors": "~1.8.0",
-    "morgan": "~1.10.0"
+    "morgan": "~1.10.0",
+    "pg": "^8.7.1"
   }
 }
