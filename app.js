@@ -15,10 +15,7 @@ var crown2Router = require('./routes/crown2_81');
 var app = express();
 
 const corsOptions = {
-  origin: [
-    'https://7web-81-499csav88-yangcici1010.vercel.app/',
-    'http://localhost:3000',
-  ],
+  origin: ['https://7web-81-yangcici1010.vercel.app', 'http://localhost:3000'],
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS',
   allowedHeaders: ['Content-Type', 'Authorization'],
 };
