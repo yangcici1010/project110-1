@@ -12,6 +12,9 @@ var apiRouter = require('./routes/api_81');
 var crownRouter = require('./routes/crown_81');
 var crown2Router = require('./routes/crown2_81');
 
+// message router
+const messageRouter = require('./routes/message');
+
 var app = express();
 
 const corsOptions = {
@@ -37,5 +40,8 @@ app.use('/api_81', apiRouter);
 app.use('/crown_81', crownRouter);
 app.use('/crown2_81', crown2Router);
 //app.use('/', indexRouter);
+
+// message router
+app.use('/message', messageRouter);
 
 module.exports = app;
